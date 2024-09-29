@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setProducts } from '../slices/productsSlice';
 import ProductCard from './ProductCard';
-import Spinner from './spinner';
+import Spinner from './Spinner';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const ProductList = ({ selectedCategory, searchTerm }) => {
