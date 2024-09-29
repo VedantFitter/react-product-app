@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import './App.css';
 import ProductList from './components/ProductList';
 import CategorySelector from './components/CategorySelector';
-import SearchBar from './components/Searchbar';
+import SearchBar from './components/SearchBar';
 
 function App() {
   const [searchParams, setSearchParams] = useSearchParams(); // for Managing the query parameters
