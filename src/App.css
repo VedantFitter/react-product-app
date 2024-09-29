@@ -1,0 +1,112 @@
+body {
+  background-color: #f5f5f5 !important;
+
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #222122 0%, #312f2f 100%);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .contain {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+input[type="text"], select {
+  width: 100%;
+  margin-bottom: 10px !important;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  max-width: 600px; 
+}
+
+
+input[type="text"]:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.card {
+  width: 18rem;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-text.text-danger {
+  color: red;
+  font-weight: 500;
+}
+
+/* Spinner Styles */
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+.end-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 1.3rem; 
+  font-weight: bold; 
+  color: #06771e; 
+  margin: 10px 0; 
+}
+
+.no-products-message {
+  font-size: 1.3rem; 
+  font-weight: bold; 
+  color: #a70c0c; 
+}
+
