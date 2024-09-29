@@ -46,3 +46,14 @@ function App() {
 }
 
 export default App;
+
+
+/*
+ Limitations of the App:
+ Slow Performance: network requests and unoptimized images can cause delays.
+ API Dependency: App is reliant on DummyJSON API; downtime or slow responses impact functionality.
+ No Caching: Data is fetched every time, increasing load times.
+ Errors are logged but not displayed to users.
+ Infinite Scroll Issues: Performance may degrade with large datasets.
+ No Server-Side Rendering (SSR): Entire app is client-rendered, affecting SEO and load times.
+ */
